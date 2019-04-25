@@ -1,0 +1,81 @@
+Qustões 1 a 9: 
+
+	echo "Gustavo Raphael"
+	vi cliente_1.txt
+	echo "Gustavo Raphael">cliente_1.txt
+	less cliente_1.txt
+	echo "Joinville">>cliente_1.txt
+	mkdir cliente
+	ls
+	mv cliente_1.txt cliente
+	cd cliente
+	ls
+	cp cliente_1.txt cliente_1.txt.bkp
+	rm cliente_1.txt
+	
+	vi cliente.script
+		echo "Gustavo Raphael"
+		vi cliente_1.txt
+		echo "Gustavo Raphael">cliente_1.txt
+		less cliente_1.txt
+		echo "Joinville">>cliente_1.txt
+		mkdir cliente
+		ls
+		mv cliente_1.txt cliente
+		cd cliente
+		ls
+		cp cliente_1.txt cliente_1.txt.bkp
+		rm cliente_1.txt
+
+		ou
+
+		echo|history>cliente.script
+	
+	chmod +x cliente.script
+	./cliente.script
+
+
+Questão 10:
+
+	O comando cal imprime um calendário. 
+
+
+Questão 11:
+	
+	wget https://gist.githubusercontent.com/leandersonandre/c8cba982f42262591be628e5397d1c3f/raw/bd13a3e13823708e477f99f9285f845b292714c6/cidades_sc.txt
+	baixa o arquivo cidades_Sc.txt do link
+
+
+Questão 12:
+
+	Pesquisa as cidades do arquivo que tenham "Balneário" no nome.
+
+
+Questão 13:
+	
+	não traz nenhum resultado pois ele filtra exatamente igual como a escrita (sensitive key), e as cidades começam com letra maiúscula.
+
+
+Questão 14: 
+
+	traz todas as cidades q tem a sequencia "do Sul" no nome.
+
+
+Questão 15: 
+
+	cat cidades_sc.txt | grep Balneario	
+
+
+Questão 16: 
+
+	cat cidades_sc.txt | grep Balneario > balneario.txt
+
+
+Questão 17: 
+
+	tar -cf compactado.tar balneario.txt
+
+
+Questão 18:
+
+	tar -xvf compactado.tar
